@@ -1,3 +1,7 @@
+# ========================================================================================
+# Toutes les modifications sont expliquées dans le fichier README.md à la racine du projet
+# ========================================================================================
+
 class Player:
     def __init__(self, name: str):
         self.name = name

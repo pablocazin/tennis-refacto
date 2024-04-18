@@ -14,8 +14,11 @@ Cela n’est pas correct car si l’utilisateur rentre un nom est différent pou
 Suppression de l’affichage des joueurs en dur (‘player 1’). On concatène la chaîne de caractères avec la variable contenant le nom du joueur
 
 ## 4 Ajout de commentaires
-Ajout de commentaires dans le code pour apporter de la clarter.
+Ajout de commentaires dans le code pour apporter de la clarté.
 
 ## 5 Création de la fonctionnalité de traduction
 Création de la fonctionnalité de traduction pour prendre en charge plusieurs langues.
+
+## 6 Ajout d'une classe Player
+Ajout d'une classe Player pour rendre le code modulable et améliorer la clarté. Avec cette classe on pourrait améliorer le code plus facilement.
 
