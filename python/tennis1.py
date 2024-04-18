@@ -1,10 +1,18 @@
+class Player:
+    def __init__(self, name: str):
+        self.name = name
+        self.point = 0
+
+    def setScore(self, value: int):
+        self.point = value
+
 class TennisGame1:
 
-    def __init__(self, p1_name, p2_name, language):
-        self.p1_name = p1_name
-        self.p2_name = p2_name
-        self.p1_points = 0
-        self.p2_points = 0
+    def __init__(self, player1: Player, player2: Player, language):
+        self.p1_name = player1.name
+        self.p2_name = player2.name
+        self.p1_points = player1.point
+        self.p2_points = player2.point
         self.language = language
 
         # Configuration des textes en français et en anglais
