@@ -27,6 +27,7 @@ class Language:
         self.win = None
         self.load_languages('languages.json')
 
+    # Permet de charger le fichier json contenant toutes les langues avec les traductions
     def load_languages(self, config_file):
         script_dir = os.path.dirname(os.path.abspath(__file__))
         file_path = os.path.join(script_dir, config_file)
