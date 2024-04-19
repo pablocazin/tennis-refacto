@@ -1,0 +1,28 @@
+[
+    {
+        "name": "English",
+        "Love": "Love",
+        "Fifteen": "Fifteen",
+        "Thirty": "Thirty",
+        "Forty": "Forty",
+        "Love-All": "Love-All",
+        "Fifteen-All": "Fifteen-All",
+        "Thirty-All": "Thirty-All",
+        "Deuce": "Deuce",
+        "Advantage": "Advantage",
+        "Win": "Win for"
+    },
+    {
+        "name": "French",
+        "Love": "Zéro",
+        "Fifteen": "Quinze",
+        "Thirty": "Trente",
+        "Forty": "Quarante",
+        "Love-All": "Égalité",
+        "Fifteen-All": "Égalité",
+        "Thirty-All": "Égalité",
+        "Deuce": "Égalité",
+        "Advantage": "Avantage",
+        "Win": "Victoire pour"
+    }
+]

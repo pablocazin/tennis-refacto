@@ -1,19 +1,19 @@
 import unittest
 
-from tennis1 import TennisGame1, Player
+from tennis1 import TennisGame1, Player, Language
 
 
 class GoldenMasterTest(unittest.TestCase):
 
     # Modifier en foncion de son chemin de dossier
     DIR = "C:\\EPSI\\Exo\\tennis-refacto\\python\\golden-master"
-    languages = ['fr', 'en']
+    languages = [Language('French'), Language('English')]
 
     player_1 = Player("player1")
     player_2 = Player("player2")
 
     @staticmethod
-    def play_game(player1: Player, player2: Player, language):
+    def play_game(player1: Player, player2: Player, language: Language):
         game = TennisGame1(player1, player2, language)
         for i in range(max(player1.point, player2.point)):
             if i < player1.point:
@@ -33,7 +33,7 @@ class GoldenMasterTest(unittest.TestCase):
                     self.player_2.setScore(score_player_2)
                     with self.subTest(f"{self.player_1.point}, {self.player_2.point}"):
                         sortie = self.play_game(self.player_1, self.player_2, language)
-                        file = open(self.make_file_name(language, self.player_1.point, self.player_2.point), "w")
+                        file = open(self.make_file_name(language.name, self.player_1.point, self.player_2.point), "w")
                         file.writelines(sortie)
                         file.close()
 
@@ -45,7 +45,7 @@ class GoldenMasterTest(unittest.TestCase):
                     self.player_2.setScore(score_player_2)
                     with self.subTest(f"{self.player_1.point}, {self.player_2.point}"):
                         sortie = self.play_game(self.player_1, self.player_2, language)
-                        file = open(self.make_file_name(language, self.player_1.point, self.player_2.point), "r")
+                        file = open(self.make_file_name(language.name, self.player_1.point, self.player_2.point), "r")
                         attendu = file.read()
                         file.close()
                         self.assertEqual(attendu, sortie)
