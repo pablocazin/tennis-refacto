@@ -22,3 +22,5 @@ Création de la fonctionnalité de traduction pour prendre en charge plusieurs l
 ## 6 Ajout d'une classe Player
 Ajout d'une classe Player pour rendre le code modulable et améliorer la clarté. Avec cette classe on pourrait améliorer le code plus facilement.
 
+## 7 Ajout d'une classe Langue
+Ajout d'une classe Langue permettant de gérer la traduction en fonction de la langue. Les langues et leurs traductions sont situés dans un fichier Json permettant l'ajout de nouvelles langues dans le futur.
